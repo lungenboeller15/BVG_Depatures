@@ -43,15 +43,14 @@
             color: #333;
             margin-bottom: 15px;
             display: flex;
-            align-items: center;
         }
         .station-name::before {
             content: "📍";
             margin-right: 10px;
         }
         .departure {
-            display: grid;
-            grid-template-columns: 60px 1fr auto;
+            display: flex;
+            flex-direction: row;
             gap: 15px;
             padding: 12px;
             margin-bottom: 8px;
@@ -63,15 +62,21 @@
             font-weight: bold;
             font-size: 16px;
             color: #333;
+            text-align: left;
+            width: 20%
         }
         .direction {
             font-weight: bold;
             color: #333;
+            min-width: 60%;
+            text-align: left !important;
         }
         .time {
             font-weight: bold;
             color: #333;
             white-space: nowrap;
+            text-align: right;
+            width: 20%;
         }
         .loading {
             text-align: center;
